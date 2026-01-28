@@ -20,6 +20,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "background_locator_2",
+      "rootUri": "file:///home/jules/.pub-cache/hosted/pub.dev/background_locator_2-2.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///home/jules/.pub-cache/hosted/pub.dev/boolean_selector-2.1.2",
       "packageUri": "lib/",
@@ -154,6 +160,30 @@
     {
       "name": "flutter_animate",
       "rootUri": "file:///home/jules/.pub-cache/hosted/pub.dev/flutter_animate-4.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_background_service",
+      "rootUri": "file:///home/jules/.pub-cache/hosted/pub.dev/flutter_background_service-5.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_background_service_android",
+      "rootUri": "file:///home/jules/.pub-cache/hosted/pub.dev/flutter_background_service_android-6.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_background_service_ios",
+      "rootUri": "file:///home/jules/.pub-cache/hosted/pub.dev/flutter_background_service_ios-5.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_background_service_platform_interface",
+      "rootUri": "file:///home/jules/.pub-cache/hosted/pub.dev/flutter_background_service_platform_interface-5.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
