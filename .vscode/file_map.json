@@ -1,0 +1,154 @@
+{
+  "check_login_response.dart": {
+    "old_identifier_name": "checkLoginResponse",
+    "new_identifier_name": "checkLoginResponse",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "97dc7f3a7af656e7560d98ddb929bdb3f8a87dfb581b978b4ac1ebb84bdb8f90",
+    "original_checksum": "97dc7f3a7af656e7560d98ddb929bdb3f8a87dfb581b978b4ac1ebb84bdb8f90"
+  },
+  "get_current_location.dart": {
+    "old_identifier_name": "getCurrentLocation",
+    "new_identifier_name": "getCurrentLocation",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "49d735d0c5bc28210d563b24d39d47f5f95ed0fbed583df54d7e3fbf82320092",
+    "original_checksum": "49d735d0c5bc28210d563b24d39d47f5f95ed0fbed583df54d7e3fbf82320092"
+  },
+  "active_orders_api.dart": {
+    "old_identifier_name": "activeOrdersApi",
+    "new_identifier_name": "activeOrdersApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "d7c18a2a98343b15cd04c56c8ff82696dd5ba32dc8fb4cd400e703e058a5d9a1",
+    "original_checksum": "d7c18a2a98343b15cd04c56c8ff82696dd5ba32dc8fb4cd400e703e058a5d9a1"
+  },
+  "example_interceptor.dart": {
+    "old_identifier_name": "exampleInterceptor",
+    "new_identifier_name": "exampleInterceptor",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "cda133bde17d58665318df1231d6a7b415d0b8c6e1558faedf9a54854e41e642",
+    "original_checksum": "cda133bde17d58665318df1231d6a7b415d0b8c6e1558faedf9a54854e41e642"
+  },
+  "update_order_status_api.dart": {
+    "old_identifier_name": "updateOrderStatusApi",
+    "new_identifier_name": "updateOrderStatusApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "e6ab521acfc9c2de7e2fb953e72dc2e42001daded9a3656ce1c57b223316744b",
+    "original_checksum": "e6ab521acfc9c2de7e2fb953e72dc2e42001daded9a3656ce1c57b223316744b"
+  },
+  "update_rider_api.dart": {
+    "old_identifier_name": "updateRiderApi",
+    "new_identifier_name": "updateRiderApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "6e060c05faaaa3b38de4840af41cd284e831f29a1625a5422d915aa2cea81deb",
+    "original_checksum": "6e060c05faaaa3b38de4840af41cd284e831f29a1625a5422d915aa2cea81deb"
+  },
+  "remove_rider_api.dart": {
+    "old_identifier_name": "removeRiderApi",
+    "new_identifier_name": "removeRiderApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "96a1ff12461aa88f44a3263a805bc24c44756a4ff80952f8156d8c57ca834d09",
+    "original_checksum": "96a1ff12461aa88f44a3263a805bc24c44756a4ff80952f8156d8c57ca834d09"
+  },
+  "duty_on_off_api.dart": {
+    "old_identifier_name": "dutyOnOffApi",
+    "new_identifier_name": "dutyOnOffApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "479481024c7f2abbaa8d0d390dfeb5992ed155d1a1021fe182bd732d97979a48",
+    "original_checksum": "479481024c7f2abbaa8d0d390dfeb5992ed155d1a1021fe182bd732d97979a48"
+  },
+  "set_order_complete_status_api.dart": {
+    "old_identifier_name": "setOrderCompleteStatusApi",
+    "new_identifier_name": "setOrderCompleteStatusApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "f77aa0b2d07bac8bbe54c1b6df25996f3e261e1e95d1f53f9a81f3bf8bdfcbfb",
+    "original_checksum": "f77aa0b2d07bac8bbe54c1b6df25996f3e261e1e95d1f53f9a81f3bf8bdfcbfb"
+  },
+  "order_decline_api.dart": {
+    "old_identifier_name": "orderDeclineApi",
+    "new_identifier_name": "orderDeclineApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "6342d6ac39819102e7a1853671fa1a86bcdde3d7cff14c88341b6c70cd847cb6",
+    "original_checksum": "6342d6ac39819102e7a1853671fa1a86bcdde3d7cff14c88341b6c70cd847cb6"
+  },
+  "init_one_signal.dart": {
+    "old_identifier_name": "initOneSignal",
+    "new_identifier_name": "initOneSignal",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "88ddcbca36fc8326fd8d1d417d527f0123080748e7f26b22b9022ce8fd28f5e6",
+    "original_checksum": "88ddcbca36fc8326fd8d1d417d527f0123080748e7f26b22b9022ce8fd28f5e6"
+  },
+  "init_one_signal_with_tag.dart": {
+    "old_identifier_name": "initOneSignalWithTag",
+    "new_identifier_name": "initOneSignalWithTag",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "93d25264306b492b98a682a4c675cf2b2e50c3dc0cf50f996c6d6fd2a05eacba",
+    "original_checksum": "93d25264306b492b98a682a4c675cf2b2e50c3dc0cf50f996c6d6fd2a05eacba"
+  },
+  "get_google_map_address.dart": {
+    "old_identifier_name": "getGoogleMapAddress",
+    "new_identifier_name": "getGoogleMapAddress",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "3ab4d11806882844cdd63ee8067a8a7f5d7d20fa17e0475570897d765790a2ad",
+    "original_checksum": "3ab4d11806882844cdd63ee8067a8a7f5d7d20fa17e0475570897d765790a2ad"
+  },
+  "order_history_api.dart": {
+    "old_identifier_name": "orderHistoryApi",
+    "new_identifier_name": "orderHistoryApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "db1d7f5c63b31e083f844640c09dadea0799b19dfee502d4717d07865c63ee81",
+    "original_checksum": "db1d7f5c63b31e083f844640c09dadea0799b19dfee502d4717d07865c63ee81"
+  },
+  "get_rider_by_id_api.dart": {
+    "old_identifier_name": "getRiderByIdApi",
+    "new_identifier_name": "getRiderByIdApi",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "5543cdb3284d6f22b9eba6295dea8c50a9f63281894c76a913ecbc79a64475c2",
+    "original_checksum": "5543cdb3284d6f22b9eba6295dea8c50a9f63281894c76a913ecbc79a64475c2"
+  },
+  "get_lat_lng_from_coordinates.dart": {
+    "old_identifier_name": "getLatLngFromCoordinates",
+    "new_identifier_name": "getLatLngFromCoordinates",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "c60f10b0a6fa56b29de2a87be241c0f648cfddad38f21a0f6b2e148acb5fa4c4",
+    "original_checksum": "c60f10b0a6fa56b29de2a87be241c0f648cfddad38f21a0f6b2e148acb5fa4c4"
+  },
+  "get_lat_lng_from_postal_code.dart": {
+    "old_identifier_name": "getLatLngFromPostalCode",
+    "new_identifier_name": "getLatLngFromPostalCode",
+    "type": "A",
+    "is_deleted": false,
+    "current_checksum": "3493f3b3ec51d0b4f13e146f0af4c28d5fc807f7a7d88cb28307b7a77b7b84cf",
+    "original_checksum": "3493f3b3ec51d0b4f13e146f0af4c28d5fc807f7a7d88cb28307b7a77b7b84cf"
+  },
+  "custom_functions.dart": {
+    "old_identifier_name": "CustomFunctions",
+    "new_identifier_name": "CustomFunctions",
+    "type": "F",
+    "is_deleted": false,
+    "current_checksum": "05f7a26c99afba7f5a532858d06571f7262716a0d8e1d1a6299de981a8354770",
+    "original_checksum": "05f7a26c99afba7f5a532858d06571f7262716a0d8e1d1a6299de981a8354770"
+  },
+  "pubspec.yaml": {
+    "old_identifier_name": "pubspec.yaml",
+    "new_identifier_name": "pubspec.yaml",
+    "type": "D",
+    "is_deleted": false,
+    "current_checksum": "4f9a01687c5e7b7808829b3f2f3761e66a81f97904df3d52bfba0b54949d0182",
+    "original_checksum": "4f9a01687c5e7b7808829b3f2f3761e66a81f97904df3d52bfba0b54949d0182"
+  }
+}
