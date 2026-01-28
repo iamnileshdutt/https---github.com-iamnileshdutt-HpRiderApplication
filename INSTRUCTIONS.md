@@ -53,6 +53,13 @@ The following permissions have been added to `android/app/src/main/AndroidManife
 - `VIBRATE`: For ringing vibration.
 - `FOREGROUND_SERVICE`: To keep the call active.
 
+**Android 14+ Note:**
+On Android 14 (SDK 34) and above, you may need to request permission to use full-screen intents at runtime if your app is not the default calling app. You can add a check in your app initialization:
+
+```dart
+await FlutterCallkitIncoming.requestFullIntentPermission();
+```
+
 ## 4. Integration with OneSignal
 
 To trigger this screen when a OneSignal notification arrives, you typically need to listen for the notification in `main.dart` or your `initOneSignal` action.
@@ -71,4 +78,12 @@ OneSignal.Notifications.addForegroundWillDisplayListener((event) {
      );
   }
 });
+```
+
+## 5. Proguard Rules (Release Build)
+
+Proguard rules have been added to `android/app/proguard-rules.pro` to ensure the CallKit classes are not obfuscated in release builds:
+
+```
+-keep class com.hiennv.flutter_callkit_incoming.** { *; }
 ```

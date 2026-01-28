@@ -10,7 +10,4 @@
 -dontwarn org.bouncycastle.pqc.jcajce.provider.BouncyCastlePQCProvider
 -keep class org.xmlpull.v1.** { *; }
 
-
-
-
-
+-keep class com.hiennv.flutter_callkit_incoming.** { *; }
