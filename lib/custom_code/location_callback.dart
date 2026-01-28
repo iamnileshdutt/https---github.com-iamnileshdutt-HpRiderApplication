@@ -7,11 +7,11 @@ class LocationCallbackHandler {
   static const String isolateName = 'LocatorIsolate';
   static SendPort? uiSendPort;
 
-  static Future<void> initCallback() async {
+  static void initCallback(Map<String, dynamic> params) {
     print('*** initCallback');
   }
 
-  static Future<void> disposeCallback() async {
+  static void disposeCallback() {
     print('*** disposeCallback');
   }
 
