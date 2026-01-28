@@ -79,11 +79,13 @@ class AppStateNotifier extends ChangeNotifier {
   }
 }
 
-GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
+GoRouter createRouter(AppStateNotifier appStateNotifier,
+        [GlobalKey<NavigatorState>? navigatorKey]) =>
+    GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      navigatorKey: appNavigatorKey,
+      navigatorKey: navigatorKey ?? appNavigatorKey,
       errorBuilder: (context, state) =>
           appStateNotifier.loggedIn ? HomeWidget() : SplashScreenWidget(),
       routes: [
