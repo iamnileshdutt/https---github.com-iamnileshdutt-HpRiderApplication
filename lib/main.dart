@@ -16,6 +16,7 @@ import 'flutter_flow/nav/nav.dart';
 import 'index.dart';
 
 import 'package:permission_handler/permission_handler.dart';
+import 'custom_code/background_service.dart';
 
 // Added imports for CallKit
 import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
@@ -39,6 +40,7 @@ void main() async {
   usePathUrlStrategy();
 
   await initFirebase();
+  await initializeService();
 
   // await authManager.initialize();
 
@@ -222,15 +224,150 @@ class OrderDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Order Details")),
-      body: Center(
+      appBar: AppBar(
+        title: const Text("Order Details"),
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
+      ),
+      backgroundColor: Colors.grey[100],
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Order ID:", style: TextStyle(fontSize: 20)),
-            SizedBox(height: 10),
-            Text(orderId,
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            // Order Card
+            Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12)),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text("New Order",
+                            style: TextStyle(
+                                color: Colors.green,
+                                fontWeight: FontWeight.bold)),
+                        Text("#${orderId.length > 8 ? orderId.substring(0, 8) : orderId}",
+                            style: const TextStyle(color: Colors.grey)),
+                      ],
+                    ),
+                    const Divider(height: 24),
+                    ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: CircleAvatar(
+                        backgroundColor: Colors.orange[100],
+                        child: const Icon(Icons.restaurant, color: Colors.orange),
+                      ),
+                      title: const Text("Burger King #402",
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      subtitle: const Text("123 Main St, New York, NY"),
+                    ),
+                    const SizedBox(height: 12),
+                    ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: CircleAvatar(
+                        backgroundColor: Colors.blue[100],
+                        child: const Icon(Icons.person, color: Colors.blue),
+                      ),
+                      title: const Text("John Doe",
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      subtitle: const Text("456 Elm St, Apt 4B, New York, NY"),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            // Items Card
+            Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12)),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text("Order Items",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 16)),
+                    const SizedBox(height: 12),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text("1x Whopper Meal"),
+                        Text("\$12.99"),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text("2x Coke Zero"),
+                        Text("\$3.00"),
+                      ],
+                    ),
+                    const Divider(height: 24),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text("Total",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 18)),
+                        Text("\$15.99",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Colors.green)),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const Spacer(),
+            // Action Buttons
+            Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Logic to decline
+                      Navigator.pop(context);
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                    ),
+                    child: const Text("Decline"),
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Logic to start delivery
+                      ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text("Delivery Started!")));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                    ),
+                    child: const Text("Start Delivery"),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
