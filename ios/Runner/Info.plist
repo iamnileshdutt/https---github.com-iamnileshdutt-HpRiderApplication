@@ -54,6 +54,11 @@
 	<true/>
 
 
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>remote-notification</string>
+        <string>voip</string>
+    </array>
 	<key>PermissionGroupNotification</key>
     <string>For receive the notifications, press alow</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
