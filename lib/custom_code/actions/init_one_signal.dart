@@ -11,12 +11,26 @@ import 'package:flutter/material.dart';
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
 import 'package:onesignal_flutter/onesignal_flutter.dart';
+import '/custom_code/actions/show_incoming_call.dart';
 
 Future<void> initOneSignal() async {
   OneSignal.Debug.setLogLevel(OSLogLevel.verbose);
   OneSignal.initialize('082d32e7-986c-41f0-b069-888a7933dde3');
 
   OneSignal.Notifications.requestPermission(true);
+
+  // Listener for incoming notifications in foreground
+  OneSignal.Notifications.addForegroundWillDisplayListener((event) {
+    if (event.notification.additionalData?['type'] == 'order') {
+      event.preventDefault(); // Prevent default notification
+      showIncomingCall(
+        event.notification.title,
+        event.notification.body,
+        null,
+        null,
+      );
+    }
+  });
 
   // Optional: Add tag/userID if needed
   // OneSignal.User.addTag("user_id", "123");

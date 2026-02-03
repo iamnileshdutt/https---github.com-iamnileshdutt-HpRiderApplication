@@ -113,6 +113,9 @@ class _MyAppState extends State<MyApp> {
       () => _appStateNotifier.stopShowingSplashImage(),
     );
 
+    // Request Android 14+ Full Screen Intent Permission
+    FlutterCallkitIncoming.requestFullIntentPermission();
+
     // CallKit Listener Implementation
     _callKitSubscription = FlutterCallkitIncoming.onEvent.listen((event) {
       if (event == null) return;
@@ -205,7 +208,6 @@ class _MyAppState extends State<MyApp> {
                   );
                 },
                 child: Icon(Icons.call),
-                tooltip: 'Simulate Incoming Order',
               ),
             ),
           ],

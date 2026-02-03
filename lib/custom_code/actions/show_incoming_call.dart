@@ -43,6 +43,7 @@ Future showIncomingCall(
     headers: <String, dynamic>{'platform': 'flutter'},
     android: AndroidParams(
       isCustomNotification: true,
+      isShowFullLockedScreen: true,
       isShowLogo: false,
       ringtonePath: 'system_ringtone_default',
       backgroundColor: '#0955fa',
